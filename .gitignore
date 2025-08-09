@@ -1,0 +1,11 @@
+# Virtual environment folder
+useless-project-env/
+.venv/
+
+# Audio files
+audio/
+
+# Model and cache files
+*.tflite
+__pycache__/
+*.pyc
