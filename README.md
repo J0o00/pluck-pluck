@@ -1,140 +1,131 @@
-pluck pluck 🎯
-Basic Details
-Team Name: Sentinels
-Team Members
-Team Lead: Chrysler K.M - Christ College of Engineering, Irinjalakuda
+# **Pluck Pluck** 🎯
 
-Member 2: Jovial Joyson - Christ College of Engineering, Irinjalakuda
+## Basic Details  
+### Team Name: **Sentinels**  
 
+### Team Members  
+- **Team Lead:** Chrysler K.M – Christ College of Engineering, Irinjalakuda  
+- **Member 2:** Jovial Joyson – Christ College of Engineering, Irinjalakuda  
 
-Project Description
-The project, whimsically named "pluck pluck," is a desktop application designed to provide humorous, real-time feedback on a person's exercise form. It uses computer vision to track movements and plays funny movie dialogues when the form is incorrect or when the person is inactive.
+---
 
-The Problem (that doesn't exist)
-In a world of over-optimized fitness trackers, we saw a glaring gap: a lack of unnecessary, judgmental digital coaches. We've solved the problem of having to rely on self-motivation by creating an app that actively teases you for bad form.
+### Project Description  
+The project, whimsically named **"Pluck Pluck"**, is a desktop application designed to provide humorous, real-time feedback on a person's exercise form. It uses computer vision to track movements and plays funny movie dialogues when the form is incorrect or when the person is inactive.  
 
-The Solution (that nobody asked for)
-"pluck pluck" is a desktop app that uses machine learning to detect squats and hand raises. Instead of offering helpful advice, it critiques your form in a playful and passive-aggressive manner with movie dialogues. It's the fitness coach you didn't know you needed, and probably don't.
+---
 
-Technical Details
-Technologies/Components Used
-For Software:
+### The Problem (that doesn’t exist)  
+In a world of over-optimized fitness trackers, we saw a glaring gap: a lack of unnecessary, judgmental digital coaches. We've solved the problem of having to rely on self-motivation by creating an app that actively teases you for bad form.  
 
-Languages used: Python
+---
 
-Frameworks used: CustomTkinter (GUI), Mediapipe (Pose Estimation)
+### The Solution (that nobody asked for)  
+**"Pluck Pluck"** is a desktop app that uses machine learning to detect squats and hand raises. Instead of offering helpful advice, it critiques your form in a playful and passive-aggressive manner with movie dialogues. It's the fitness coach you didn’t know you needed, and probably don’t.  
 
-Libraries used: OpenCV, Pydub, NumPy, Pillow
+---
 
-Tools used: FFmpeg (for audio playback)
+## Technical Details  
 
-For Hardware:
+### Technologies/Components Used  
 
-List main components: Laptop with an integrated or external webcam.
+**For Software:**  
+- **Languages used:** Python  
+- **Frameworks used:** CustomTkinter (GUI), Mediapipe (Pose Estimation)  
+- **Libraries used:** OpenCV, Pydub, NumPy, Pillow  
+- **Tools used:** FFmpeg (for audio playback)  
 
-List specifications: A modern laptop with a good processor and at least 8GB of RAM is recommended for smooth real-time video processing.
+**For Hardware:**  
+- **Main components:** Laptop with integrated or external webcam  
+- **Specifications:** Modern laptop, good processor, minimum 8GB RAM for smooth real-time processing  
+- **Tools required:** Git for version control  
 
-List tools required: Git for version control.
+---
 
-Implementation
-For Software:
+### Implementation  
 
-Installation
-Clone the repository:
+**Installation** 
+opencv-python: Used for accessing the webcam and processing video frames.
 
+mediapipe: The core machine learning library for real-time pose estimation.
+
+pydub: A high-level Python library for working with audio files, used to play your movie dialogues.
+
+customtkinter: A library that extends Tkinter to create modern, attractive user interfaces.
+
+Pillow: A library for handling image files, used for displaying the webcam feed and the animated GIF.
+
+External Tool
+FFmpeg: This is a crucial command-line tool that pydub uses for playing audio files. You must download the executable files from the official FFmpeg website and add the bin folder to your system's PATH.
+
+Clone the repository:  
+```bash
 git clone https://github.com/J0o00/USELESSPROJECT.git
+```
 
-
-
-
-
-Create and activate a virtual environment:
-
+Create and activate a virtual environment:  
+```bash
 python3.12 -m venv useless-project-env
 .\useless-project-env\Scripts\activate
+```
 
-
-
-
-
-Install the required libraries:
-
+Install the required libraries:  
+```bash
 pip install opencv-python mediapipe pydub customtkinter Pillow
+```
 
+Download and set up **FFmpeg** (required for audio in Pydub):  
+- Download from [FFmpeg Builds](https://ffmpeg.org/download.html)  
+- Add `bin` folder to system PATH  
 
+Download and place the audio & GIF files:  
+- **Audio files:** [Google Drive Link](https://drive.google.com/drive/folders/1CRWFIQakxHDFg6jeqSOUMj7ZJQZpFr70?usp=drive_link)  
+- **GIF file:** [Google Drive Link](https://drive.google.com/file/d/1bnv5SWeGrKLKLX86VkiJe7Hgj9BaS0cZ/view?usp=drive_link)  
 
+Folder structure:  
+```
+project/
+│── audio/
+│   ├── incorrect_form/
+│   └── standing_still/
+│── duck.gif
+│── Useless Exercise Form Detector.py
+```
 
-
-Download and set up FFmpeg:
-
-pydub requires FFmpeg to play audio. Download the executables and add the bin folder to your system's PATH. You can get the latest builds from here.
-
-Download and place the audio and GIF files:
-
-Due to GitHub's size limitations, the audio and GIF files are not included in this repository.
-
-Download the audio files from this link: https://drive.google.com/drive/folders/1CRWFIQakxHDFg6jeqSOUMj7ZJQZpFr70?usp=drive_link
-
-Download the GIF file from this link: https://drive.google.com/file/d/1bnv5SWeGrKLKLX86VkiJe7Hgj9BaS0cZ/view?usp=drive_link
-
-Create a folder named audio in your project directory.
-
-Inside the audio folder, create two subfolders: incorrect_form and standing_still.
-
-Place the corresponding .mp3 audio clips in these folders.
-
-Place the duck.gif file in the main project directory.
-
-Run
-With your virtual environment active, run the Python script:
-
+**Run the app:**  
+```bash
 python "Useless Exercise Form Detector.py"
+```
 
+---
 
+## Project Documentation  
 
+### Screenshots  
+![Screenshot1][(Add screenshot 1 here)](https://drive.google.com/file/d/1uG6jriNbz7ZWAf1rSFW9NtPB9c67AGTs/view?usp=drive_link)  
+*Detecting incorrect squat form and triggering a funny dialogue*  
 
+![Screenshot2][(Add screenshot 2 here) ](https://drive.google.com/file/d/1jZWk9LzlgmPe655ymwsSRQl8ofAAZfTE/view?usp=drive_link) 
+*Passive-aggressive popup while user is idle*  
 
-Project Documentation
-For Software:
+![Screenshot3][(Add screenshot 3 here)](https://drive.google.com/file/d/11qg8AXTqtuzhOJ-_p4vjB-WOV6GDJ4s-/view?usp=drive_link)  
+*GUI showing live pose estimation*  
 
-Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-Add caption explaining what this shows
+---
 
-![Screenshot2](Add screenshot 2 here with proper name)
-Add caption explaining what this shows
+### Diagrams  
+![Workflow](Add diagram here)  
+*Webcam → Pose Estimation (MediaPipe) → Form Analysis → Funny Dialogue Audio Output*  
 
-![Screenshot3](Add screenshot 3 here with proper name)
-Add caption explaining what this shows
+---
 
-Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-Add caption explaining your workflow
+## Team Contributions  
+- **Chrysler K.M:** Project ideation, GUI design, integration of Mediapipe with Tkinter, testing  
+- **Jovial Joyson:** Audio integration with Pydub, FFmpeg setup, bug fixes, repository management  
+- **An:** GIF integration, funny dialogue scripting, resource collection  
 
-For Hardware:
+---
 
-Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-Add caption explaining connections
+Made with ❤️ at **TinkerHub Useless Projects**  
 
-![Schematic](Add your schematic diagram here)
-Add caption explaining the schematic
-
-Build Photos
-![Components](Add photo of your components here)
-List out all components shown
-
-![Build](Add photos of build process here)
-Explain the build steps
-
-![Final](Add photo of final product here)
-Explain the final build
-
-Team Contributions
-Chrysler K.M: [Specific contributions]
-
-Jovial Joyson: [Specific contributions]
-
-An: [Specific contributions]
-
-Made with ❤️ at TinkerHub Useless Projects
+![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)  
+![Static Badge](https://img.shields.io/badge/UselessProjects--25-25?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)  
